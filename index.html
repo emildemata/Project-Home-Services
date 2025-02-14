@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
     <style>
-
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -16,22 +15,22 @@
             background-color: white;
             color: royalblue;
             text-align: center;
-            padding: .001px 0;
+            padding: 10px 0;
         }
         nav {
-            font-size: 20px;
+            font-size: 18px;
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
             background-color: lightseagreen;
-            padding: 20px;
+            padding: 15px;
         }
         nav a {
             color: white;
-            text-decoration: navajowhite;
-            margin: 0 15px;
+            text-decoration: none;
+            margin: 10px;
         }
         .hero {
-            height: 300px;
             height: 300px;
             display: flex;
             align-items: center;
@@ -53,27 +52,54 @@
             background: whitesmoke;
             padding: 10px;
             margin: 10px;
-            width: 30%;
+            width: 100%;
+            max-width: 300px;
             box-shadow: 0px 0px 10px lightblue;
             border-radius: 5px;
         }
         footer {
-            font-size: 20px;
+            font-size: 18px;
             background-color: lightblue;
             color: black;
             text-align: center;
             padding: 10px;
-            margin-top: 80px;
+            margin-top: 20px;
+        }
+        img, video {
+            width: 100%;
+            height: auto;
+            max-width: 900px;
+            border: 5px solid blue;
+        }
+        
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            .hero {
+                font-size: 1.5rem;
+                text-align: center;
+            }
+            .service {
+                width: 90%;
+            }
+            header h1 {
+                font-size: 16px;
+            }
+            footer {
+                font-size: 14px;
+            }
         }
     </style>
 </head>
-    <body>
+<body>
     <header>
-        <marquee behavior="scroll" direction="left" scrollamount="10"><h1 style="color:blue;">"Are you Looking for Perfect Glass, Aluminum, and Stainless Steel works for your Home?</h1></marquee>
-        <h1 style="color:black;">PHS STEEL AND ALUMINUM FABRICATION SERVICES</h1>
-        <h1 style="color:black;">Purok 1 Malacbang Paracale Camarines Norte</h1>   
+        <marquee behavior="scroll" direction="left" scrollamount="10"><h1>"Are you Looking for Perfect Glass, Aluminum, and Stainless Steel works for your Home?"</h1></marquee>
+        <h1>PHS STEEL AND ALUMINUM FABRICATION SERVICES</h1>
+        <h1>Purok 1 Malacbang Paracale Camarines Norte</h1>
     </header>
-    <nav>  
+    <nav>
         <a href="index.html">Home</a>
         <a href="stainless.html">Stainless Products</a>
         <a href="glass-aluminum.html">Glass and Aluminum Products</a>
@@ -81,42 +107,36 @@
         <a href="about.html">About Us</a>
         <a href="contact.html">Contact Us</a>
     </nav>
-    <header>
+    <section class="container">
         <h1>BUSINESS HOURS MONDAY - SATURDAY 8AM - 5PM SUNDAY CLOSED</h1>
-        <h1>FREE ESTIMATE PO...W  E  L  C  O  M  E  PO SA PHS...ANO PO MAIPAGLILINGKOD NAMIN...</h1></marquee>
-        <img src="PHS PROFILE.jpg" alt="PHS Image 1" width="900" height="800" style="border: 10px solid blue;">    
-        <img src="PHS2.jpg" alt="PHS Image 1" width="900" height="800" style="border: 10px solid blue;">
-            <body>
-                <header>
-                    <h1>Our Project Video Gallery</h1>
-                </header>
-                    <h1>Sen. Robin Padilla and S&R Royal Farm</h1>
-                    <h1>for Job Works for <a href="https://www.facebook.com/search/top?q=project%20home%20services" target="_blank">Project HOME Services</a></h1>
-                    <h1>repair your Glass Works for your Upcoming Movie.</h1>
-                <video width="1000" height="1000" controls width="1000" height="1000" style="border: 10px solid gold;">
-                    <source src="2.mp4" type="video/mp4">                   
-                </video>
-            </body>
-            <body>
-                <header>
-                    <h1>ALUMINUM CABINETS</h1>
-                </header>
-                <video width="1000" height="1000" controls width="1000" height="1000" style="border: 10px solid gold;">
-                    <source src="4.mp4" type="video/mp4">                   
-                </video>
-            </body>
-            <body>
-                <header>
-                    <h1>Latest Project in Vinzons Camarines Norte</h1>
-                </header>
-                <video width="1000" height="1000" controls width="1000" height="1000" style="border: 10px solid gold;">
-                    <source src="5.mp4" type="video/mp4">                   
-                </video>
-                <h1>For inquires please visit our FB Page  <a href="https://www.facebook.com/search/top?q=project%20home%20services" target="_blank">Project HOME Services</a></h1>
-            </body>
-        </header>           
-        <footer>
-        <p>&copy; ™ 2025 EMIL SOTERIO DE MATA,WEB DEVELOPER,edemata2@gmail.com. All Rights Reserved.</p>
-        </footer>
+        <h1>FREE ESTIMATE PO... WELCOME PO SA PHS... ANO PO MAIPAGLILINGKOD NAMIN...</h1>
+        <img src="PHS PROFILE.jpg" alt="PHS Image">
+        <img src="PHS2.jpg" alt="PHS Image 2">
+    </section>
+    <section class="container">
+        <h1>Our Project Video Gallery</h1>
+        <h2>Sen. Robin Padilla and S&R Royal Farm</h2>
+        <h3>for Job Works for <a href="https://www.facebook.com/search/top?q=project%20home%20services" target="_blank">Project HOME Services</a></h3>
+        <h3>repair your Glass Works for your Upcoming Movie.</h3>
+        <video controls>
+            <source src="2.mp4" type="video/mp4">                   
+        </video>
+    </section>
+    <section class="container">
+        <h1>ALUMINUM CABINETS</h1>
+        <video controls>
+            <source src="4.mp4" type="video/mp4">                   
+        </video>
+    </section>
+    <section class="container">
+        <h1>Latest Project in Vinzons Camarines Norte</h1>
+        <video controls>
+            <source src="5.mp4" type="video/mp4">                   
+        </video>
+        <h3>For inquiries please visit our FB Page  <a href="https://www.facebook.com/search/top?q=project%20home%20services" target="_blank">Project HOME Services</a></h3>
+    </section>
+    <footer>
+        <p>&copy; ™ 2025 EMIL SOTERIO DE MATA, WEB DEVELOPER, edemata2@gmail.com. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
