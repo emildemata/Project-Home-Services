@@ -66,6 +66,32 @@
             padding: 10px;
             margin-top: 80px;
         }
+         img, video {
+            width: 100%;
+            height: auto;
+            max-width: 900px;
+            border: 5px solid blue;
+        }
+        
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            .hero {
+                font-size: 1.5rem;
+                text-align: center;
+            }
+            .service {
+                width: 90%;
+            }
+            header h1 {
+                font-size: 16px;
+            }
+            footer {
+                font-size: 14px;
+            }
+        }
     </style>
 </head>
     <body>
